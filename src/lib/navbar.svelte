@@ -1,4 +1,3 @@
-
 <script>
   let menuItems = [
     { name: 'Home', url: '/' },
@@ -8,17 +7,16 @@
   ];
 </script>
 
-<nav>
+<nav class="bg-gray-400 shadow-sm">
   <ul>
     {#each menuItems as item}
-      <li><a href={item.url}>{item.name}</a></li>
+      <li><a class="text-xl" href={item.url}>{item.name}</a></li>
     {/each}
   </ul>
 </nav>
 
 <style>
   nav {
-    background-color: #f2f2f2;
     padding: 10px;
   }
 
@@ -36,7 +34,11 @@
 
   a {
     text-decoration: none;
-    color: #333;
-    font-size: larger;
+    color: #222; /* Softer color */
+    transition: color 0.3s; /* Smooth transition for hover */
+  }
+
+  a:hover {
+    color: black; /* Slightly darker on hover */
   }
 </style>
