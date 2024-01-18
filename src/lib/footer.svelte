@@ -1,5 +1,4 @@
 <script>
-	import { sveltekit } from '@sveltejs/kit/vite';
     import {Github, Linkedin} from 'lucide-svelte';
 </script>
 
