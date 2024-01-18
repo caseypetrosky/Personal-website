@@ -7,8 +7,9 @@
   ];
 </script>
 
-<nav class="bg-gray-400 shadow-sm">
-  <ul>
+
+<nav style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" class="p-2">
+  <ul style="display: flex; justify-content: center; gap: 1rem;">
     {#each menuItems as item}
       <li><a class="text-xl" href={item.url}>{item.name}</a></li>
     {/each}
@@ -16,18 +17,7 @@
 </nav>
 
 <style>
-  nav {
-    padding: 10px;
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
-
+ 
   li {
     margin-right: 10px;
   }

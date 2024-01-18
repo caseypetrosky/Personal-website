@@ -1,4 +1,5 @@
 <script>
+	import { sveltekit } from '@sveltejs/kit/vite';
     import {Github, Linkedin} from 'lucide-svelte';
 </script>
 
@@ -18,6 +19,7 @@
             GitHub
         </h3>
     </a>
+    <p class="text-sm">This website is built using SvelteKit and hosted on Vercel</p>
     
 </footer>
 
